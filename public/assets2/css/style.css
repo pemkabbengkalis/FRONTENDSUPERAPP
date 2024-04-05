@@ -839,8 +839,16 @@ section {
   gap: 10px;
   align-items: center;
   padding: 20px;
-  background: #f6f6f6;
+  background: white;
+  border-radius: 10px;
   transition: ease-in-out 0.3s;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.icon-layanan{
+    width: 100%;
+    object-fit: contain;
+    height: 50px;
 }
 
 .features .icon-box i {

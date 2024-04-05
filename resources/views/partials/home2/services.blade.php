@@ -12,7 +12,7 @@
             <div class="col-lg-3 col-md-4">
                 <div class="icon-box">
                     <div style="width:30%;">
-                        <img style="width:100%;" src="{{$v->icon}}" alt="">
+                        <img class="icon-layanan" src="{{$v->icon}}" alt="">
                     </div>
                     <h3><a href="">{{$v->name}}</a></h3>
                 </div>
