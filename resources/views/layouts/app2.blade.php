@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Vesperr Bootstrap Template - Index</title>
+    <title>Klik Bermasa</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -45,7 +45,9 @@
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
+    @if(!empty($slider) || $slider != null)
     @include('partials.home2.slider')
+    @endif
     <!-- End Hero -->
 
     @yield('content')

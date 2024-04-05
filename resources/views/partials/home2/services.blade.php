@@ -3,7 +3,7 @@
 
         <div class="section-title" data-aos="fade-up">
             <h2>Layanan</h2>
-            <p>Layanan yang ada pada Klik-Bermasa</p>
+            <p>Silahkan pilih layanan yang anda butuhkan</p>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="300">
