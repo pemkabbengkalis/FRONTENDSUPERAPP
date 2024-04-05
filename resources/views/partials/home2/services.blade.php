@@ -14,7 +14,7 @@
                     <div style="width:30%;">
                         <img class="icon-layanan" src="{{$v->icon}}" alt="">
                     </div>
-                    <h3><a href="">{{$v->name}}</a></h3>
+                    <h3><a href="{{route('detail_layanan', $v->id)}}">{{$v->name}}</a></h3>
                 </div>
             </div>
         @endforeach
