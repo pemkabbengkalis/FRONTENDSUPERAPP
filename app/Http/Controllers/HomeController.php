@@ -16,10 +16,14 @@ class HomeController extends Controller
             }
             $data = $responseData['data'];
             $layanan = [];
+            $slider  = [];
             foreach ($data['list_layanan'] as $item) {
                 $layanan[] = (object) $item;
             }
-        return view('pages.home2',compact('layanan'));
+            foreach ($data['slider'] as $item) {
+                $slider[] = (object) $item;
+            }
+        return view('pages.home2',compact('layanan','slider'));
         
     }
 }

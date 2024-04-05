@@ -2,7 +2,7 @@
     <div class="container d-flex align-items-center">
 
         <div class="logo mr-auto">
-            <h1 class="text-light"><a href="index.html"><span>Vesperr</span></a></h1>
+            <h1 class="text-light"><a href="{{url('/')}}"><span>Klik Bermasa</span></a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html"><img src="{{ asset('') }}assets2/img/logo.png" alt="" class="img-fluid"></a>-->
         </div>
@@ -34,7 +34,7 @@
                 </li>
                 <li><a href="#contact">Contact</a></li>
 
-                <li class="get-started"><a href="#about">Get Started</a></li>
+                <li class="get-started"><a href="#about">Login</a></li>
             </ul>
         </nav><!-- .nav-menu -->
 
