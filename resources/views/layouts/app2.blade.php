@@ -45,7 +45,7 @@
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    @if(!empty($slider) || $slider != null)
+    @if(isset($slider))
     @include('partials.home2.slider')
     @endif
     <!-- End Hero -->
