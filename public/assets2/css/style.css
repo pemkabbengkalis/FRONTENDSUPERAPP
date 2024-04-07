@@ -493,10 +493,9 @@ section {
   content: '';
   width: 50px;
   height: 2px;
-  background: #3498db;
+  background: #ffc107;
   display: inline-block;
 }
-
 .section-title h2::before {
   margin: 0 15px 10px 0;
 }
@@ -837,6 +836,7 @@ section {
 .features .icon-box {
   display: flex;
   gap: 10px;
+  margin: 8px;
   align-items: center;
   padding: 20px;
   background: white;
