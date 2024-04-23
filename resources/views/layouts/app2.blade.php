@@ -27,6 +27,8 @@
     <link href="{{ asset('') }}assets2/vendor/venobox/venobox.css" rel="stylesheet">
     <link href="{{ asset('') }}assets2/vendor/aos/aos.css" rel="stylesheet">
 
+    @stack('css')
+
     <!-- Template Main CSS File -->
     <link href="{{ asset('') }}assets2/css/style.css" rel="stylesheet">
 
@@ -72,6 +74,8 @@
 
     <!-- Template Main JS File -->
     <script src="{{ asset('') }}assets2/js/main.js"></script>
+    
+    @stack('js')
 
     <script>
         $('.owl-carousel').owlCarousel({
