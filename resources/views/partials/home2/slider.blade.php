@@ -1,6 +1,7 @@
 <div class="owl-carousel owl-theme">
-    @foreach($slider as $i =>$v)
-    <div class="item"><img src="{{$v->src}}" alt="Slide 1"></div>
+    @foreach ($slider as $slide)
+        <div class="item">
+            <img src="{{ $slide->src }}" alt="{{ $slide->judul }}">
+        </div>
     @endforeach
-    <!-- Add more slides as needed -->
 </div>
