@@ -1,7 +1,7 @@
 @extends('layouts.app2')
 
 @section('content')
-    <div class="breadcrumbs m-5">
+    <div class="breadcrumbs m-5" style="background-color: #fff !important">
         <div class="row">
             <div class="col-sm-10">
                 <section class="breadcrumbs">
