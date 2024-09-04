@@ -1,9 +1,10 @@
 <?php
 
+use App\Http\Controllers\auth\loginController as AuthLoginController;
+use App\Http\Controllers\auth\registerController as AuthRegisterController;
 use App\Http\Controllers\LayananController;
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
-;
 use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,11 @@ Route::get('login', [LoginController::class, 'index'])->name('login');
 Route::match(['get', 'post'], 'login/action', [LoginController::class, 'actionLogin'])->name('action_login');
 Route::get('layanan/{id_layanan}', [LayananController::class, 'getDetailLayanan'])->name('detail_layanan');
 Route::match(['get', 'post'], 'layanan/pengajuan/{id_layanan}', [LayananController::class, 'pengajuanLayanan'])->name('pengajuan');
+
+// RERE WAS HERE
+Route::get('landing', [HomeController::class, 'landing'])->name('landing');
+Route::prefix('auth')->group(function () {
+    Route::get('login', [AuthLoginController::class, 'index'])->name('auth_login');
+
+    Route::get('register', [AuthRegisterController::class, 'index'])->name('auth_register');
+});
