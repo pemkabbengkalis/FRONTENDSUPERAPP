@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\auth\loginController as AuthLoginController;
 use App\Http\Controllers\auth\registerController as AuthRegisterController;
+use App\Http\Controllers\admen\dashboardController;
 use App\Http\Controllers\LayananController;
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
@@ -23,10 +24,19 @@ Route::match(['get', 'post'], 'login/action', [LoginController::class, 'actionLo
 Route::get('layanan/{id_layanan}', [LayananController::class, 'getDetailLayanan'])->name('detail_layanan');
 Route::match(['get', 'post'], 'layanan/pengajuan/{id_layanan}', [LayananController::class, 'pengajuanLayanan'])->name('pengajuan');
 
-// RERE WAS HERE
-Route::get('landing', [HomeController::class, 'landing'])->name('landing');
+// AUTH
 Route::prefix('auth')->group(function () {
-    Route::get('login', [AuthLoginController::class, 'index'])->name('auth_login');
+    // LOGIN
+    Route::get('login', [AuthLoginController::class, 'index'])->name('auth.login');
 
-    Route::get('register', [AuthRegisterController::class, 'index'])->name('auth_register');
+    // REGISTER
+    Route::get('register', [AuthRegisterController::class, 'index'])->name('auth.register');
+});
+
+// LANDING
+Route::get('landing', [HomeController::class, 'landing'])->name('landing');
+
+// DAHSBOARD
+Route::prefix('admin')->group(function () {
+    Route::get('dashboard', [dashboardController::class, 'index'])->name('dashboard');
 });
