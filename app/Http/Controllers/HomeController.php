@@ -36,6 +36,6 @@ class HomeController extends Controller
 
     public function landing()
     {
-        return 'Landing page';
+        return view('theme.landing');
     }
 }
