@@ -33,4 +33,9 @@ class HomeController extends Controller
             return abort(404, 'Data tidak ditemukan');
         }
     }
+
+    public function landing()
+    {
+        return 'Landing page';
+    }
 }
