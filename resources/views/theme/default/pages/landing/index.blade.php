@@ -22,23 +22,9 @@
                                 aria-label="Toggle navigation"><span></span><span></span><span></span></button>
                             <div class="navbar-collapse justify-content-center collapse hidenav" id="navbarDefault">
                                 <ul class="navbar-nav navbar_nav_modify" id="scroll-spy">
-                                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                                    <li class="nav-item"> <a class="nav-link" id="page" href="#demo">Page</a></li>
-                                    <li class="nav-item"><a class="nav-link" id="Feature" href="#framework">Feature</a>
-                                    </li>
-                                    <li class="nav-item"><a class="nav-link" id="Portfolio"
-                                            href="https://themeforest.net/user/pixelstrap/portfolio"
-                                            target="_blank">Portfolio</a></li>
-                                    <li class="nav-item"><a class="nav-link"
-                                            href="https://docs.google.com/forms/d/e/1FAIpQLSe6hKUXw_By-pg7yabL0FxoTM02ZPTxoXy8PE3yboRuUCuyeA/viewform"
-                                            target="_blank">Hire Us</a></li>
-                                    <li class="nav-item"><a class="nav-link" id="documentation"
-                                            href="https://docs.pixelstrap.net/admin/riho/document/"
-                                            target="_blank">Documentation</a></li>
                                 </ul>
                             </div>
-                            <div class="buy-btn"><a class="nav-link js-scroll"
-                                    href="https://themeforest.net/user/pixelstrap/portfolio" target="_blank">Buy Now</a>
+                            <div class="buy-btn"><a class="nav-link js-scroll" href="#">Masuk</a>
                             </div>
                         </nav>
                     </header>
@@ -55,16 +41,16 @@
                         </div>
                         <div class="content text-center">
                             <div>
-                                <h1 class="text-center">The Premium Choice<span
-                                        class="d-flex align-items-center justify-content-center pt-2 sub-content"><span>Admin</span>
+                                <h1 class="text-center">Portal Layanan Publik<span
+                                        class="d-flex align-items-center justify-content-center pt-2 sub-content"><span>Pemerintah</span>
                                         <button class="animate-button-slide"><span class="notification-slider"><span
                                                     class="d-flex h-100"><span class="mb-0 f-w-400"> <span
-                                                            class="font-primary">Ecommerce</span></span><i
+                                                            class="font-primary">Kabupaten</span></span><i
                                                         class="icon-arrow-top-right f-light"> </i></span><span
                                                     class="d-flex h-100"><span class="mb-0 f-w-400"><span
-                                                            class="f-light">PROJECT</span></span></span><span
+                                                            class="f-light">Bengkalis</span></span></span><span
                                                     class="d-flex h-100"> <span class="mb-0 f-w-400"><span
-                                                            class="f-light">Default</span></span></span></span></button><span>HTML
+                                                            class="f-light">Riau</span></span></span></span></button><span>HTML
                                             Template</span></span></h1>
                                 <div class="arrow-animate">
                                     <svg>
@@ -106,8 +92,8 @@
                 <div class="row">
                     <div class="col-sm-12 wow pulse">
                         <div class="title text-center">
-                            <h5>10+ frameworks available</h5>
-                            <h2 class="mb-lg-2 mb-0">Top Frameworks</h2>
+                            <h5>Daftar</h5>
+                            <h2 class="mb-lg-2 mb-0">Instansi</h2>
                         </div>
                     </div>
                     <div class="col-sm-12 framworks">
@@ -202,6 +188,20 @@
                 </div>
             </div>
         </section>
+        <!-- Footer -->
+        <footer class="footer-landing">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="footer-content">
+                            <div class="footer-text mt-4">
+                                <p>© 2024 <span class="font-primary">{{ env('APP_NAME') }}</span> All Rights Reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 @endsection
 

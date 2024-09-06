@@ -12,11 +12,31 @@
     <link rel="shortcut icon" href="{{ asset('theme') }}/assets/images/favicon.png" type="image/x-icon" />
     <title>Title - Sub Title</title>
     <!-- Google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&amp;display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('theme') }}/assets/css/font-awesome.css" />
+    @if (request()->is('admin*'))
+        <!-- admin font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&amp;display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('theme') }}/assets/css/font-awesome.css" />
+    @else
+        <!-- landing page font -->
+        <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&amp;display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{ asset('theme') }}/assets/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="{{ asset('theme') }}/assets/css/vendors/icofont.css">
+        <link rel="icon" href="{{ asset('theme') }}/assets/svg/landing-icons.svg">
+        <link rel="stylesheet" type="text/css" href="{{ asset('theme') }}/assets/css/vendors/slick.css">
+        <link rel="stylesheet" type="text/css" href="{{ asset('theme') }}/assets/css/vendors/slick-theme.css">
+        <link rel="stylesheet" type="text/css" href="{{ asset('theme') }}/assets/css/vendors/animate.css">
+    @endif
     <!-- ico-font-->
     <link rel="stylesheet" type="text/css" href="{{ asset('theme') }}/assets/css/vendors/icofont.css" />
     <!-- Themify icon-->
