@@ -9,6 +9,6 @@ class dashboardController extends Controller
 {
     public function index()
     {
-        return view('theme.admen.dashboard');
+        return view('theme.default.pages.dashboard.home');
     }
 }

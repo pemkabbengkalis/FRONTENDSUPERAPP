@@ -9,6 +9,6 @@ class loginController extends Controller
 {
     public function index()
     {
-        return 'Login page';
+        return view('theme.default.pages.auth.login');
     }
 }

@@ -10,7 +10,7 @@
     "page-wrapper " + localStorage.getItem("page-wrapper")
   );
   if (localStorage.getItem("page-wrapper") === null) {
-    $(".page-wrapper").addClass("compact-wrapper");
+    $(".page-wrapper").addClass("horizontal-wrapper");
   }
 
   // left sidebar and vertical menu

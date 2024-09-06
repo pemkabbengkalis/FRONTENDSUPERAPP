@@ -9,6 +9,6 @@ class registerController extends Controller
 {
     public function index()
     {
-        return 'Register page';
+        return view('theme.default.pages.auth.register');
     }
 }
