@@ -26,7 +26,7 @@
                     <div class="page-title">
                         <div class="row none">
                             <div class="col-6">
-                                <h3>Layout Light </h3>
+                                <h3>Layanan </h3>
                             </div>
                             <div class="col-6">
                                 <ol class="breadcrumb">
@@ -35,8 +35,8 @@
                                                 <use href="{{ asset('theme') }}/assets/svg/icon-sprite.svg#stroke-home">
                                                 </use>
                                             </svg></a></li>
-                                    <li class="breadcrumb-item">Color version </li>
-                                    <li class="breadcrumb-item active">Layout light </li>
+                                    <li class="breadcrumb-item">Menu </li>
+                                    <li class="breadcrumb-item active">Layanan </li>
                                 </ol>
                             </div>
                         </div>
@@ -44,7 +44,7 @@
                 </div>
                 <!-- Container-fluid starts-->
                 <div class="container-fluid">
-                    <div class="row starter-main">
+                    <div class="row">
                         @yield('dashboard-content')
                     </div>
                 </div>

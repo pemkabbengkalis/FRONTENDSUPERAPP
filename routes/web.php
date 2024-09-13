@@ -28,6 +28,7 @@ Route::match(['get', 'post'], 'layanan/pengajuan/{id_layanan}', [LayananControll
 Route::prefix('auth')->group(function () {
     // LOGIN
     Route::get('login', [AuthLoginController::class, 'index'])->name('auth.login');
+    Route::post('login', [AuthLoginController::class, 'validasi_login'])->name('auth.login.validasi');
 
     // REGISTER
     Route::get('register', [AuthRegisterController::class, 'index'])->name('auth.register');

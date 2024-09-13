@@ -8,118 +8,87 @@
                     <div class="wizard-4" id="wizard">
                         <ul>
                             <li> <a class="logo text-start ps-0" href="index.html"><img class="img-fluid for-dark"
-                                        src="{{ asset('theme') }}/assets/images/logo/logo.png" alt="looginpage"><img class="img-fluid for-light"
-                                        src="{{ asset('theme') }}/assets/images/logo/logo_dark.png" alt="looginpage"></a></li>
+                                        src="{{ asset('theme') }}/assets/images/logo/logo.png" alt="looginpage"><img
+                                        class="img-fluid for-light"
+                                        src="{{ asset('theme') }}/assets/images/logo/logo_dark.png" alt="looginpage"></a>
+                            </li>
                             <li><a href="#step-1">
                                     <h4>1 </h4>
-                                    <h5>personal</h5><small>Add personal details</small>
+                                    <h5>Kependudukan</h5><small>Detail Kependudukan</small>
                                 </a></li>
                             <li><a href="#step-2">
                                     <h4>2</h4>
-                                    <h5>Address</h5><small>Add additional info</small>
+                                    <h5>Biodata</h5><small>Informasi Data Diri</small>
                                 </a></li>
                             <li><a href="#step-3">
                                     <h4>3</h4>
-                                    <h5>Message</h5><small>Add message(optional)</small>
+                                    <h5>Kata Sandi</h5><small>Tentukan Kata Sandi</small>
                                 </a></li>
-                            <li class="pb-0"><a href="#step-4">
-                                    <h4>4</h4>
-                                    <h5> Done <i class="fa fa-thumbs-o-up"></i></h5><small>Complete !</small>
-                                </a></li>
-                            <li> <img src="{{ asset('theme') }}/assets/images/login/icon.png" alt="looginpage"></li>
+                            <li>
+                                <img src="{{ asset('theme') }}/assets/images/login/icon.png" alt="looginpage">
+                            </li>
                         </ul>
                         <div id="step-1">
                             <div class="wizard-title">
-                                <h2>Sign up to account</h2>
-                                <h5 class="text-muted mb-4">Enter your email & password to login</h5>
+                                <h2>Kependudukan</h2>
+                                <h5 class="text-muted mb-4">Silahkan masukkan data kependudukan Anda</h5>
                             </div>
                             <div class="login-main">
                                 <div class="theme-form">
                                     <div class="form-group mb-3">
-                                        <label for="name">First Name</label>
-                                        <input class="form-control" id="name" type="text" placeholder="Johan"
-                                            required="required">
+                                        <label for="no_kk">Nomor Kartu Keluarga</label>
+                                        <input class="form-control" id="no_kk" type="number" name="no_kk"
+                                            placeholder="Masukkan Nomor Kartu Keluarga" required="required">
                                     </div>
                                     <div class="form-group mb-3">
-                                        <label for="lname">Last Name</label>
-                                        <input class="form-control" id="lname" type="text" placeholder="Deo">
-                                    </div>
-                                    <div class="form-group mb-3">
-                                        <label for="contact">Contact No.</label>
-                                        <input class="form-control" id="contact" type="number" placeholder="123456789">
+                                        <label for="nik">Nomor Induk Kependudukan</label>
+                                        <input class="form-control" id="nik" type="number" name="nik"
+                                            placeholder="Masukkan Nomor Induk Kependudukan">
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div id="step-2">
                             <div class="wizard-title">
-                                <h2>Sign up to account</h2>
-                                <h5 class="text-muted mb-4">Enter your email & password to login</h5>
+                                <h2>Biodata</h2>
+                                <h5 class="text-muted mb-4">Silahkan masukkan informasi data diri Anda</h5>
                             </div>
                             <div class="login-main">
                                 <div class="theme-form">
                                     <div class="form-group mb-3 m-t-15">
-                                        <label for="exampleFormControlInput1">Email address</label>
-                                        <input class="form-control" id="exampleFormControlInput1" type="email"
-                                            placeholder="name@example.com">
+                                        <label for="name">Nama Lengkap</label>
+                                        <input class="form-control" id="name" type="text" name="name"
+                                            placeholder="Masukkan Nama Lengkap">
                                     </div>
                                     <div class="form-group mb-3">
-                                        <label for="exampleInputPassword1">Password</label>
-                                        <input class="form-control" id="exampleInputPassword1" type="password"
-                                            placeholder="Password">
+                                        <label for="email">Email</label>
+                                        <input class="form-control" id="email" type="email" name="email"
+                                            placeholder="Masukkan Email">
                                     </div>
-                                    <div class="form-group mb-3">
-                                        <label for="exampleInputPassword1">Confirm Password</label>
-                                        <input class="form-control" id="exampleInputcPassword1" type="password"
-                                            placeholder="Enter again">
+                                    <div class="form-group mb-3 m-t-15">
+                                        <label for="no_hp">Nomor Telepon</label>
+                                        <input class="form-control" id="no_hp" type="number" name="no_hp"
+                                            placeholder="Masukkan Nomor Telepon">
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div id="step-3">
                             <div class="wizard-title">
-                                <h2>Sign up to account</h2>
-                                <h5 class="text-muted mb-4">Enter your email & password to login</h5>
+                                <h2>Kata Sandi</h2>
+                                <h5 class="text-muted mb-4">Silahkan masukkan Kata Sandi Anda</h5>
                             </div>
                             <div class="login-main">
                                 <div class="theme-form">
                                     <div class="form-group mb-3">
-                                        <label for="exampleFormControlInput1">Birthday:</label>
-                                        <input class="form-control" type="date">
+                                        <label for="password">Kata Sandi</label>
+                                        <input class="form-control" id="password" type="password" name="password"
+                                            placeholder="Password">
                                     </div>
                                     <div class="form-group mb-3">
-                                        <label class="control-label">Age</label>
-                                        <input class="form-control" placeholder="Age" type="text">
-                                    </div>
-                                    <div class="form-group mb-3">
-                                        <label class="control-label">Have Passport</label>
-                                        <input class="form-control" placeholder="Yes/No" type="text">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="step-4">
-                            <div class="wizard-title">
-                                <h2>Sign up to account</h2>
-                                <h5 class="text-muted mb-4">Enter your email & password to login</h5>
-                            </div>
-                            <div class="login-main">
-                                <div class="theme-form">
-                                    <div class="form-group mb-3">
-                                        <label class="control-label">Country</label>
-                                        <input class="form-control mt-1" type="text" placeholder="Country"
-                                            required="required">
-                                    </div>
-                                    <div class="form-group mb-3">
-                                        <label class="control-label">State</label>
-                                        <input class="form-control mt-1" type="text" placeholder="State"
-                                            required="required">
-                                    </div>
-                                    <div class="form-group mb-3">
-                                        <label class="control-label">City</label>
-                                        <input class="form-control mt-1" type="text" placeholder="City"
-                                            required="required">
-                                        <!-- Smart Wizard Ends-->
+                                        <label for="validate_password">Konfirmasi Kata Sandi</label>
+                                        <input class="form-control" id="validate_password" type="password"
+                                            name="validate_password" placeholder="Enter again">
                                     </div>
                                 </div>
                             </div>
