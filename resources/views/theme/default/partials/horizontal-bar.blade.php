@@ -28,60 +28,22 @@
                             </svg>
                             <svg class="fill-icon">
                                 <use href="{{ asset('theme') }}/assets/svg/icon-sprite.svg#fill-home"></use>
-                            </svg><span>Dashboard</span></a></li>
-                    <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title"
-                            href="#">
-                            <svg class="stroke-icon">
-                                <use href="{{ asset('theme') }}/assets/svg/icon-sprite.svg#stroke-starter-kit">
-                                </use>
-                            </svg>
-                            <svg class="fill-icon">
-                                <use href="{{ asset('theme') }}/assets/svg/icon-sprite.svg#fill-starter-kit">
-                                </use>
-                            </svg><span>Starter kit</span></a>
-                        <ul class="sidebar-submenu">
-                            <li><a class="submenu-title" href="#">color version<span class="sub-arrow"><i
-                                            class="fa fa-chevron-right"></i></span></a>
-                                <ul class="nav-sub-childmenu submenu-content">
-                                    <li><a href="index.html">Layout Light</a></li>
-                                    <li><a href="layout-dark.html">Layout Dark</a></li>
-                                </ul>
-                            </li>
-                            <li> <a class="submenu-title" href="#">Page layout<span class="sub-arrow"><i
-                                            class="fa fa-chevron-right"></i></span></a>
-                                <ul class="nav-sub-childmenu submenu-content">
-                                    <li><a href="boxed.html">Boxed</a></li>
-                                    <li><a href="layout-rtl.html">RTL</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="hide-on-scroll.html"><span>Hide menu on Scroll</span></a></li>
-                            <li> <a class="submenu-title" href="#">Footers<span class="sub-arrow"><i
-                                            class="fa fa-chevron-right"></i></span></a>
-                                <ul class="nav-sub-childmenu submenu-content">
-                                    <li><a href="footer-light.html">Footer Light</a></li>
-                                    <li><a href="footer-dark.html">Footer Dark</a></li>
-                                    <li><a href="footer-fixed.html">Footer Fixed</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+                            </svg><span>Dashboard</span></a>
                     </li>
-                    <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title"
-                            href="https://support.pixelstrap.com/portal/en/signin" target="_blank">
-                            <svg class="stroke-icon">
-                                <use href="{{ asset('theme') }}/assets/svg/icon-sprite.svg#stroke-social">
-                                </use>
-                            </svg>
-                            <svg class="fill-icon">
-                                <use href="{{ asset('theme') }}/assets/svg/icon-sprite.svg#fill-social"></use>
-                            </svg><span>Raise Support</span></a></li>
-                    <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i><a class="sidebar-link sidebar-title"
-                            href="https://docs.pixelstrap.net/admin/riho/document/" target="_blank">
-                            <svg class="stroke-icon">
-                                <use href="{{ asset('theme') }}/assets/svg/icon-sprite.svg#stroke-form"></use>
-                            </svg>
-                            <svg class="fill-icon">
-                                <use href="{{ asset('theme') }}/assets/svg/icon-sprite.svg#fill-form"></use>
-                            </svg><span>Documentation </span></a></li>
+                    <li class="sidebar-list">
+                        <i class="fa fa-thumb-tack"></i>
+                        <a class="sidebar-link sidebar-title" href="#">
+                            <i class="icofont icofont-gears"></i>
+                            <span>Pengaturan</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-list">
+                        <i class="fa fa-thumb-tack"> </i>
+                        <a class="sidebar-link sidebar-title" href="#">
+                            <i class="icofont icofont-power"></i>
+                            <span>Keluar </span>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>

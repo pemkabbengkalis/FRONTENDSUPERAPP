@@ -26,12 +26,11 @@
         <div class="left-header col-xxl-5 col-xl-6 col-lg-5 col-md-4 col-sm-3 p-0">
             <div> <a class="toggle-sidebar" href="#"> <i class="iconly-Category icli"> </i></a>
                 <div class="d-flex align-items-center gap-2 ">
-                    <h4 class="f-w-600">Welcome Alex</h4><img class="mt-0"
+                    <h4 class="f-w-600">Selamat Datang Alex</h4><img class="mt-0"
                         src="{{ asset('theme') }}/assets/images/hand.gif" alt="hand-gif" />
                 </div>
             </div>
-            <div class="welcome-content d-xl-block d-none"><span class="text-truncate col-12">Here’s what’s
-                    happening with your store today. </span></div>
+            <div class="welcome-content d-xl-block d-none"><span class="text-truncate col-12">di Aplikasi KLIK BERMASA. </span></div>
         </div>
         <div class="nav-right col-xxl-7 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto">
             <ul class="nav-menus">

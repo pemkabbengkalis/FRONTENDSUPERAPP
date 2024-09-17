@@ -40,4 +40,5 @@ Route::get('landing', [HomeController::class, 'landing'])->name('landing');
 // DAHSBOARD
 Route::prefix('admin')->group(function () {
     Route::get('dashboard', [dashboardController::class, 'index'])->name('dashboard');
+    Route::get('layanan/{id_layanan}', [dashboardController::class, 'layanan'])->name('dashboard.detail_layanan');
 });
